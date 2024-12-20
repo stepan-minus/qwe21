@@ -1,140 +1,52 @@
-A fun and interactive block-breaking game implemented in Python using Pygame, SQLite3, and Tkinter. This project includes a user login system, high score tracking, and a visually appealing gameplay experience.
-
-Features
-
-User Registration and Login:
-
-Register new users with unique usernames.
-
-Secure login functionality with password validation.
-
-Game Mechanics:
-
-Control a paddle to bounce a ball and destroy blocks.
-
-Dynamic gameplay with score tracking.
-
-High Score System:
-
-Tracks and displays user high scores.
-
-Updates records in a database after each game.
-
-Leaderboards:
-
-View the top scores of all users.
-
-Graphical Interface:
-
-Tkinter-based UI for registration and login.
-
-Pygame-based interface for the game.
-
-Getting Started
-
-Prerequisites
-
-Make sure you have Python installed on your machine. You will also need the following Python libraries:
-
+Начало работы
+Предварительные требования
+Убедиться, что Python установлен на машине.
+Установить необходимые библиотеки Python:
 Pygame
-
-Tkinter (comes pre-installed with Python)
-
-SQLite3 (comes pre-installed with Python)
-
-You can install Pygame using pip:
-
+Tkinter (предустановлен с Python)
+SQLite3 (предустановлен с Python)
+Установить Pygame с помощью pip:
+bash
 pip install pygame
-
-Installation
-
-Clone the repository:
-
+Установка
+Клонировать репозиторий:
+bash
 git clone <repository-url>
 cd <repository-folder>
-
-Run the application by executing the main.py file:
-
+Запустить приложение, выполнив файл main.py:
+bash
 python main.py
-
-File Overview
-
+Обзор файлов
 main.py
-
-Entry point of the application.
-
-Allows users to either register or log in.
-
+Точка входа в приложение.
+Позволяет пользователям зарегистрироваться или войти в систему.
 game.py
-
-Implements the main game logic using Pygame.
-
-Features include:
-
-Block-breaking mechanics.
-
-High score updates.
-
-Leaderboard display.
-
+Реализует основную игровую логику с использованием Pygame.
+Включает механики разрушения блоков и обновления высоких результатов.
 log.py
-
-Provides a login interface using Tkinter.
-
-Verifies user credentials.
-
-Redirects to the game upon successful login.
-
+Предоставляет интерфейс входа с использованием Tkinter.
+Проверяет учетные данные пользователя и перенаправляет в игру после успешного входа.
 reg.py
-
-Facilitates new user registration using Tkinter.
-
-Validates unique usernames.
-
-Saves user credentials to a SQLite database.
-
-How to Play
-
-Register or Log In:
-
-Start the application (main.py).
-
-Register a new account or log in with existing credentials.
-
-Game Controls:
-
-Use the left and right arrow keys to move the paddle.
-
-Bounce the ball to break blocks and earn points.
-
-Winning and Losing:
-
-The game ends when you miss the ball or destroy all blocks.
-
-Your high score is updated if you achieve a new personal best.
-
-Database Structure
-
-The project uses an SQLite3 database (users.db) with the following schema:
-
-Users Table:
-
-id (Primary Key)
-
-username (Unique)
-
-password
-
-high_score
-
-Future Enhancements
-
-Add levels with increasing difficulty.
-
-Introduce power-ups and special effects.
-
-Implement a multiplayer mode.
-
-Credits
-
-This project was developed as a demonstration of Python programming skills, integrating multiple libraries for a cohesive application.
+Обеспечивает регистрацию новых пользователей с использованием Tkinter.
+Проверяет уникальность имен пользователей и сохраняет учетные данные в базе данных SQLite.
+Как играть
+Регистрация или вход:
+Запустите приложение (main.py).
+Зарегистрируйте новый аккаунт или войдите с существующими учетными данными.
+Управление игрой:
+Используйте клавиши стрелок влево и вправо для перемещения ракетки.
+Отскакивайте мячом, чтобы разрушать блоки и зарабатывать очки.
+Победа и поражение:
+Игра заканчивается, когда вы пропускаете мяч или разрушаете все блоки.
+Ваши высокие результаты обновляются, если вы достигаете нового личного рекорда.
+Структура базы данных
+Проект использует базу данных SQLite3 (users.db) со следующей схемой:
+Таблица пользователей:
+id (первичный ключ)
+username (уникальное имя)
+password (пароль)
+high_score (высокий результат)
+Будущие улучшения
+Добавить уровни с увеличением сложности.
+Ввести бонусы и специальные эффекты.
+Реализовать многопользовательский режим.
